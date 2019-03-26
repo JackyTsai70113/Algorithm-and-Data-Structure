@@ -32,8 +32,7 @@ public:
 
 void LinkedList::PrintList(){
 
-    if (!first) {                          
-        cout << "List is empty.\n";
+    if (!first) {                      
         return;
     }
 
@@ -81,7 +80,6 @@ void LinkedList::Delete(int x){
     }
 
     if (!current) {
-        std::cout << "There is no " << x << " in list.\n";
         return;
     }
     else if (current == first) {        // 要刪除的node剛好在list的開頭
